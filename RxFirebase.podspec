@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     Including for now Database, Firestore, RemoteConfig, Storage, Functions, Auth
     DESC
     
-    s.homepage         = 'https://github.com/RxSwiftCommunity/RxFirebase'
+    s.homepage         = 'https://github.com/dyegos/RxFirebase'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'Arnaud Dorgans' => 'arnaud.dorgans@gmail.com' }
