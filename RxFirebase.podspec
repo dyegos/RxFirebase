@@ -32,21 +32,27 @@ Pod::Spec.new do |s|
     s.static_framework = true
 
     s.subspec 'Firestore' do |firestore|
+        firestore.dependency 'RxFirebaseFirestore'
         firestore.source_files = 'Sources/Core/Firestore.swift'
     end
     s.subspec 'RemoteConfig' do |remote|
+        remote.dependency 'RxFirebaseRemoteConfig'
         remote.source_files = 'Sources/Core/RemoteConfig.swift'
     end
     s.subspec 'Database' do |database|
+        database.dependency 'RxFirebaseDatabase'
         database.source_files = 'Sources/Core/Database.swift'
     end
     s.subspec 'Storage' do |storage|
+        storage.dependency 'RxFirebaseStorage'
         storage.source_files = 'Sources/Core/Storage.swift'
     end
     s.subspec 'Functions' do |functions|
+        functions.dependency 'RxFirebaseFunctions'
         functions.source_files = 'Sources/Core/Functions.swift'
     end
     s.subspec 'Auth' do |auth|
+        auth.dependency 'RxFirebaseAuthentication'
         auth.source_files = 'Sources/Core/Auth.swift'
     end
 end
