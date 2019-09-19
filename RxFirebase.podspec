@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'RxFirebase'
-    s.version          = '0.3.7'
+    s.version          = '0.3.8'
     s.summary          = 'RxSwift extensions for Firebase.'
     
     # This description is used to generate tags and improve search results.
@@ -32,27 +32,27 @@ Pod::Spec.new do |s|
     s.static_framework = true
 
     s.subspec 'Firestore' do |firestore|
-        firestore.dependency 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
+        firestore.dependency 'RxFirebaseFirestore', 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
         firestore.source_files = 'Sources/Core/Firestore.swift'
     end
     s.subspec 'RemoteConfig' do |remote|
-        remote.dependency 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
+        remote.dependency 'RxFirebaseRemoteConfig', 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
         remote.source_files = 'Sources/Core/RemoteConfig.swift'
     end
     s.subspec 'Database' do |database|
-        database.dependency 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
+        database.dependency 'RxFirebaseDatabase', 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
         database.source_files = 'Sources/Core/Database.swift'
     end
     s.subspec 'Storage' do |storage|
-        storage.dependency 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
+        storage.dependency 'RxFirebaseStorage', 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
         storage.source_files = 'Sources/Core/Storage.swift'
     end
     s.subspec 'Functions' do |functions|
-        functions.dependency 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
+        functions.dependency 'RxFirebaseFunctions', 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
         functions.source_files = 'Sources/Core/Functions.swift'
     end
     s.subspec 'Auth' do |auth|
-        auth.dependency 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
+        auth.dependency 'RxFirebaseAuthentication', 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
         auth.source_files = 'Sources/Core/Auth.swift'
     end
 end
