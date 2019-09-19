@@ -32,27 +32,27 @@ Pod::Spec.new do |s|
     s.static_framework = true
 
     s.subspec 'Firestore' do |firestore|
-        firestore.dependency 'RxFirebaseFirestore'
+        firestore.dependency 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
         firestore.source_files = 'Sources/Core/Firestore.swift'
     end
     s.subspec 'RemoteConfig' do |remote|
-        remote.dependency 'RxFirebaseRemoteConfig'
+        remote.dependency 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
         remote.source_files = 'Sources/Core/RemoteConfig.swift'
     end
     s.subspec 'Database' do |database|
-        database.dependency 'RxFirebaseDatabase'
+        database.dependency 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
         database.source_files = 'Sources/Core/Database.swift'
     end
     s.subspec 'Storage' do |storage|
-        storage.dependency 'RxFirebaseStorage'
+        storage.dependency 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
         storage.source_files = 'Sources/Core/Storage.swift'
     end
     s.subspec 'Functions' do |functions|
-        functions.dependency 'RxFirebaseFunctions'
+        functions.dependency 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
         functions.source_files = 'Sources/Core/Functions.swift'
     end
     s.subspec 'Auth' do |auth|
-        auth.dependency 'RxFirebaseAuthentication'
+        auth.dependency 'https://github.com/dyegos/RxFirebase' :branch => 'test_update'
         auth.source_files = 'Sources/Core/Auth.swift'
     end
 end
