@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
     
     s.description      = <<-DESC
     RxSwift extensions for Firebase.
-    Including for now Database, Firestore, RemoteConfig, Storage, Functions, Auth
+    Including for now Firestore, Storage, Auth
     DESC
     
     s.homepage         = 'https://github.com/dyegos/RxFirebase'
@@ -28,12 +28,16 @@ Pod::Spec.new do |s|
     s.author           = { 'Arnaud Dorgans' => 'arnaud.dorgans@gmail.com' }
     s.source           = { :git => 'https://github.com/dyegos/RxFirebase.git', :tag => s.version.to_s }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-    s.ios.deployment_target = '8.0'
+    s.ios.deployment_target = '11.0'
     s.static_framework = true
 
     s.subspec 'Firestore' do |firestore|
         firestore.dependency 'RxFirebaseFirestore'
         firestore.source_files = 'Sources/Core/Firestore.swift'
+    end
+        s.subspec 'Storage' do |storage|
+        storage.dependency 'RxFirebaseStorage'
+        storage.source_files = 'Sources/Core/Storage.swift'
     end
     s.subspec 'Auth' do |auth|
         auth.dependency 'RxFirebaseAuthentication'
