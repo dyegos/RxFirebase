@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/dyegos/RxFirebase.git', :tag => s.version.to_s }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
     
-    s.cocoapods_version = '>= 1.9.0'
-    s.ios.deployment_target = '11.0'
+    s.cocoapods_version = '>= 1.4.0'
+    s.ios.deployment_target = '8.0'
 
     s.static_framework = true
     s.dependency 'RxSwift', '~> 5'
